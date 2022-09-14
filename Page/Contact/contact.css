@@ -62,7 +62,7 @@ header nav li:hover {
     box-shadow: rgb(71, 71, 67) 2px 3px;
     transition: color 2s;
     filter: brightness(.8);
-    background: rgb(69,69,70);
+    background: rgb(69,69,71);
     background: linear-gradient(141deg, rgba(69,69,70,1) 31%, rgba(50,50,50,1) 100%);
 }
 
