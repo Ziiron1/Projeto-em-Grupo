@@ -68,3 +68,21 @@ header nav li:hover {
     cursor: pointer;
     
 }
+
+form {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-form {
+    width: 600px;
+    height: 500px;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
