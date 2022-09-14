@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(70, 70, 70);
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: 110px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background: rgb(88, 88, 88);
+    background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
+    padding: 0px 70px 0;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #948989;
+    filter: brightness(8);
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header nav li {
+    background-color: #535353;
+    padding: 5px;
+    border-radius: 5px;
+    filter: brightness(.9);
+}
+
+header nav li:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    border: black 10px;
+    padding: 5px;
+    box-shadow: rgb(71, 71, 67) 2px 3px;
+    transition: color 2s;
+    filter: brightness(.8);
+    background: rgb(69,69,70);
+    background: linear-gradient(141deg, rgba(69,69,70,1) 31%, rgba(50,50,50,1) 100%);
+}
+
+.btt {
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+span {
+    font-weight: bold;
+}
