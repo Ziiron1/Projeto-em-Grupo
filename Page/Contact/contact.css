@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,10 +12,9 @@
 body {
     background: rgb(87, 88, 88);
     background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
-
 
 .logo {
     height: 100px;
@@ -34,9 +34,13 @@ header {
     align-items: center;
 }
 
+#menu {
+    position: fixed;
+}
+
 .menu {
     width: 100%;
-    height: 50px;
+    height: 5px;
     font-family: 'Arial';
     display: flex;
     justify-content: flex-end;
@@ -60,6 +64,7 @@ header {
     text-align: center;
     color: #fff;
     border-radius: 4px;
+    font-family: 'Archivo Narrow';
 }
 
 .menu ul ul {
@@ -85,24 +90,8 @@ header {
     background-color: rgb(88, 133, 255);
 }
 
-label [for="bt_menu"] {
-    padding: 5px;
-    background-color: #222;
-    color: #fff;
-    font-family: 'Arial';
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-}
-
-#bt_menu {
-    display: none;
-}
-
 form {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     flex-direction: column;
     display: flex;
@@ -134,4 +123,5 @@ h2#title {
     align-content: center;
     flex-wrap: wrap;
     font-weight: bolder;
+    font-family: 'Varela Round', sans-serif;
 }
