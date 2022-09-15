@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
 * {
@@ -6,23 +7,24 @@
     padding: 0;
 }
 
+
 body {
     background: rgb(87, 88, 88);
     background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
+
 
 .logo {
     height: 100px;
-    width: 110px;
+    margin-left: 30px;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
+    width: 110px;
+    height: 100px;
     background-size: cover;
-    border-radius: 4px;
 }
 
 header {
@@ -32,46 +34,76 @@ header {
     align-items: center;
 }
 
-.header-menu{
+.menu {
+    width: 100%;
+    height: 50px;
+    font-family: 'Arial';
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #a1a0a0;
-    filter: brightness(2);
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
-header nav ul {
-    display: flex;
-    gap: 40px;
+.menu ul {
     list-style: none;
+    position: relative;
 }
 
-header nav li {
-    background-color: #535353;
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #cfcfcf;
+    color: rgb(255, 252, 88);
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: rgb(88, 133, 255);
+}
+
+label [for="bt_menu"] {
     padding: 5px;
-    border-radius: 5px;
-    transition: ease-in-out 0.16s;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 
-header nav li:hover {
-    letter-spacing: 0.4px;
-    background-color: #6d6c6c;
-    cursor: pointer;
-    
+#bt_menu {
+    display: none;
 }
 
 form {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -79,10 +111,27 @@ form {
 }
 
 .box-form {
-    width: 600px;
+    width: 450px;
     height: 500px;
-    background-color: deeppink;
+    filter: brightness(1.1);
     display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center
+    padding-bottom: 200px;
+}
+
+h2#title {
+    width: 100%;
+    height: 100%;
+    color: rgb(240, 252, 84);
+    display: inline-flex;
+    font-weight: 900;
+    gap: 300px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    font-weight: bolder;
 }
