@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,10 +16,6 @@ body {
     margin-top: 110px;
 }
 
-body p {
-
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -27,8 +24,7 @@ header {
 }
 
 .header-container {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.7358718487394958) 0%, rgba(233,233,109,0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
     position: fixed;
     left: 0;
     width: 100%;
@@ -72,14 +68,14 @@ header {
     color: #fff;
     border-radius: 4px;
     font-family: 'Archivo Narrow';
-    /*   font-size: 1.3rem; */
-    /* UM PROVÁVEL TAMANHO DE FONTE */
+    font-size: 1.1rem;
 }
 
 .menu ul ul {
     position: absolute;
     visibility: hidden;
     list-style: none;
+    font-style: none;
 }
 
 .menu ul li:hover ul {
@@ -137,3 +133,4 @@ h2#title {
     font-weight: bolder;
     font-family: 'Varela Round', sans-serif;
 }
+
