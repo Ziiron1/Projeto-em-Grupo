@@ -11,7 +11,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -104,6 +104,8 @@ header {
     align-items: center;
     justify-content: center;
     background-image: url(./img/background-section-1.png);
+    width: 1310px;
+    height: 593px;
 }
 
 .cont-1 img {
@@ -163,4 +165,9 @@ footer {
     font-weight: Light 300;
     color: white;
     font-size: 14px;
+}
+
+#muscle {
+    width: 1310px;
+    height: 400px;
 }
