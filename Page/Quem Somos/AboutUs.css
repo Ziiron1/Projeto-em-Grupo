@@ -11,10 +11,8 @@
 }
 
 body {
-    background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
     height: 100vh;
     width: 100%;
-    margin-top: 110px;
 }
 
 header {
