@@ -1,5 +1,88 @@
+/* ---Modelo padão utilizado css---
+
+ELemento x {
+ ---modfificados dentro do elemneto---
+ padding: ... ;
+ magirn: ... ;
+ background-color: ..;
+ 
+ ---modfificados na caixa do elemneto---
+ display: ...;
+ justify-content: ... ;
+ align-items: ... ;
+}
+*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    /*margem colcada para o conteudo nao fica atrás do header */
+    margin-top: 101px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*header fixo*/
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #2F2F2F;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    margin-top: 2x;
+    left: 40px;
+}
+
+.logo img {
+    height: 101px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .header-menu {
+    font-size: 1.3rem;
+
+    display: flex;
+}
+
+.header-menu li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-menu a:hover {
+    color: #EBC42A;
+}
+
+.button_menu {
+    height: 45px;
+    width: 45px;
+    margin-right: 25px;
+    background-color: #2F2F2F;
+}
+
+.button_menu:hover {
+
+    background-color: #686868;
+    transition: 0.3s;
 }
