@@ -12,6 +12,10 @@ ELemento x {
     align-items: ... ;
 }
 */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,60 +23,92 @@ ELemento x {
 }
 
 body {
-    /*margem colcada para o conteudo nao fica atrás do header */
-    margin-top: 101px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #3A3042;
-}
-
-/*CSS header fixo*/
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
+    background: rgb(87, 88, 88);
+    background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
+    height: 100%;
     width: 100%;
-    height: 101px;
-    background-color: #2F2F2F;
 }
 
-.container {
+header {
     display: flex;
     justify-content: space-between;
-}
-
-.logo {
-    position: relative;
-    margin-top: 2x;
-    left: 40px;
-}
-
-.logo img {
-    height: 101px;
-}
-
-nav {
-    display: flex;
+    height: 100px;
     align-items: center;
 }
 
-nav .header-menu {
-    font-size: 1.3rem;
-
-    display: flex;
+.header-container {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 0;
 }
 
-.header-menu li {
-    margin-right: 50px;
+#menu {
+    position: fixed;
+    margin-left: 40px;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    font-family: 'Arial';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu a {
+    padding: 8px 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Archivo Narrow';
+    font-size: 1.1rem;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
     list-style: none;
 }
 
-.header-menu a {
-    text-decoration: none;
-    color: #fff;
+.menu ul li:hover ul {
+    visibility: visible;
 }
 
-.header-menu a:hover {
-    color: #EBC42A;
+.menu a:hover {
+    background-color: #a1a1a1;
+    color: rgb(255, 252, 88);
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: rgb(88, 133, 255);
+    border-radius: 8px;
+    list-style: none;
 }
 
 .button_menu {

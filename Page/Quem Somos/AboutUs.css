@@ -202,29 +202,8 @@ header {
 
 /* Footer  */
 
-footer {
+footer{
     background-color: #2B2B2B;
-    display: flex;
-    align-items: flex-start;
-}
-
-.contato {
-    width: 500px;
-    margin: 100px 0px 100px 50px;
-}
-
-.contato-titulo {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.contato-endereco {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: Light 300;
-    color: white;
-    font-size: 14px;
 }
 
 #muscle {
