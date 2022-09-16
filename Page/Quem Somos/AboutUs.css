@@ -1,5 +1,232 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Teko&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header-container {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+#menu {
+    position: fixed;
+    margin-left: 40px;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    font-family: 'Arial';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu a {
+    padding: 8px 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Archivo Narrow';
+    font-size: 1.1rem;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #a1a1a1;
+    color: rgb(255, 252, 88);
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: rgb(88, 133, 255);
+    border-radius: 8px;
+    list-style: none;
+}
+
+/* Main Section 1  */
+
+.cont-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/background-section-1.png);
+    width: 100%;
+}
+
+.cont-1 img {
+    margin: 100px;
+}
+
+.cont-1 p {
+    font-family: 'Teko', sans-serif;
+    color: #EBC42A;
+    font-size: 80px;
+}
+
+/* Main section 2  */
+
+.cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 170px 150px;
+    gap: 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cont-2 img {
+    width: 100%;
+}
+
+
+.cont-2-sobre h1 {
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+/* Main section 3  */
+
+.cont-3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    margin: 250px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cont-3-visao h2{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.cont-3-visao-texto{
+    border-width: thin; border-style: solid; border-color: #D9D9D9;
+    width: 300px; height: 300px;
+    background-color: #EFEFEF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 18px;
+    padding: 40px 30px 0 30px;
+}
+
+.cont-3-missao h2{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.cont-3-missao p{
+    border-width: thin; border-style: solid; border-color: #D9D9D9;
+    width: 300px; height: 300px;
+    background-color: #EFEFEF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 18px;
+    padding: 40px 30px 0 30px;
+
+}
+
+.cont-3-valores h2{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.cont-3-valores ul{
+    border-width: thin; border-style: solid; border-color: #D9D9D9;
+    width: 300px; height: 300px;
+    background-color: #EFEFEF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    font-size: 18px;
+    padding: 40px 30px 0 60px;
+}
+
+/* Footer  */
+
+footer {
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contato {
+    width: 500px;
+    margin: 100px 0px 100px 50px;
+}
+
+.contato-titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contato-endereco {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+    color: white;
+    font-size: 14px;
+}
+
+#muscle {
+    width: 100%;
 }

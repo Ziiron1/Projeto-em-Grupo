@@ -24,6 +24,7 @@ header {
 }
 
 .header-container {
+    background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
     position: fixed;
     left: 0;
