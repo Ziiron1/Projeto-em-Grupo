@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -201,6 +202,35 @@ header {
 }
 
 /* Footer  */
+
+.social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social a{
+    display: inline-flex;
+    background-color: #2B2B2B;
+    color: white;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+    margin: 0px 15px 15px;
+}
+
+.social a:hover{
+    background-color: #EBC42A;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
 
 footer{
     background-color: #2B2B2B;
