@@ -10,10 +10,10 @@
 
 body {
     background: rgb(87, 88, 88);
-    background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
     height: 100%;
     width: 100%;
     margin-top: 110px;
+    background-color: #3A3042;
 }
 
 header {
@@ -95,4 +95,351 @@ header {
     background-color: rgb(88, 133, 255);
     border-radius: 8px;
     list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS Banner*/
+main {
+    height: 732px;
+    background-image: url("/img/banner02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+}
+
+h1,
+h2 {
+    font-size: 4rem;
+    color: #EBC42A;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 5px 2px 10px #2F2F2F;
+    font-weight: 400;
+}
+
+.banner h1 {
+    width: 600px;
+    margin-left: 70px;
+}
+
+
+/*CSS sessao_nossa_equipe*/
+
+.sessao_nossa_equipe1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+
+/*CSS equipe 1*/
+
+
+.equipe1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.equipe2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.bloco h2{
+    margin-bottom: 10px;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.bloco p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: none;
+}
+
+.equipe1 .bloco {
+    height: 376px;
+    width: 600px;
+    box-shadow: 10px 20px 100px #000;
+
+    background-color: #A6A6A8;
+}
+
+.equipe1 .foto1,.foto3{
+    height: 376px;
+    width: 600px;
+    box-shadow: 10px 20px 100px #000;
+    background-color: #A6A6A8;
+}
+
+
+
+/*CSS equipe 2*/
+
+
+.equipe2 {
+    display: flex;
+}
+
+.equipe2 img {
+    margin-right: 200px;
+    box-shadow: 10px 20px 100px #000;
+}
+
+.equipe2 {
+    display: flex;
+}
+
+.equipe2 .bloco {
+    height: 376px;
+    width: 600px;
+    box-shadow: 10px 20px 100px #000;
+    background-color: #A6A6A8;
+}
+.equipe2 .foto2,.foto4{
+    height: 376px;
+    width: 600px;
+    box-shadow: 10px 20px 100px #000;
+    background-color: #A6A6A8;
+}
+
+
+
+/*CCS foto colocadas no background*/
+.foto1 {
+    background-image: url("./img/foto_equipe01.png");
+}
+
+.foto2 {
+    background-image: url("./img/foto_equipe01.png");
+}
+
+.foto3 {
+    background-image: url("./img/foto_equipe01.png");
+}
+
+.foto4 {
+    background-image: url("./img/foto_equipe01.png");
+}
+
+
+
+@media(min-width: 1900px) {
+    .banner h1 {
+        width: 1000px;
+        margin-right: 70px;
+        font-size: 7rem;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    .equipe1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .equipe2 {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+  
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        height: 500px;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        width: 600px;
+        font-size: 4rem;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+  
+    .equipe1 .bloco {
+        height: 600px;
+        width: 500px;
+      
+    }
+    
+    .equipe2 .bloco {
+        height: 600px;
+        width: 500px;
+        margin-top: -305px;
+       
+    }
+    
+
+    .equipe1 .foto1,.foto3{
+        height: 600px;
+        width: 600px;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+
+    .equipe2 .foto2,.foto4{
+        height: 300px;
+        width: 600px;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+  
+    
+    
+
+}
+
+
+@media (max-width: 780px) {
+    header {
+        display: none;
+    }
+
+    main {
+        height: 300px;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        width: auto;
+        height: auto;
+        font-size: 1.8rem;
+        margin: 0px;
+    }
+
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    
+    .equipe1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .equipe2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .equipe1 .bloco {
+        height: 300px;
+        width: 100vw;
+      
+    }
+    
+    .equipe2 .bloco {
+        height: 300px;
+        width: 100vw;
+        margin-top: 0px;
+       
+    }
+    
+
+    .equipe1 .foto1,.foto3{
+        height: 400px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+
+    .equipe2 .foto2,.foto4{
+        height: 400px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+  
+
+
+}
+
+@media (max-width: 400px) {
+  
+    .equipe1 .bloco {
+        height: 200px;
+        width: 100vw;
+      
+    }
+    
+    .equipe2 .bloco {
+        height: 200px;
+        width: 100vw;
+        margin-top: 0px;
+       
+    }
+    
+
+    .equipe1 .foto1,.foto3{
+        height: 200px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+
+    .equipe2 .foto2,.foto4{
+        height: 200px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        
+    }
+  
+
 }
