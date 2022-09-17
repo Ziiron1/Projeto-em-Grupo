@@ -9,37 +9,31 @@
 }
 
 body {
-    background: rgb(87, 88, 88);
     height: 100%;
     width: 100%;
-    margin-top: 110px;
-    background-color: #3A3042;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
+    flex-direction: column;
+    height: 732px; 
+    align-items: flex-start;
+    background-image: url(/img/banner01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.header-container {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
-    position: fixed;
-    left: 0;
-    width: 100%;
-    top: 0;
-    z-index: 0;
-}
-
-#menu {
-    position: fixed;
-    margin-left: 40px;
-    top: 0;
-    z-index: 1;
+.nav-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+}
+
+.banner-phrase {
+    align-self: center;
+    margin-top: 220px;
 }
 
 .menu {
@@ -49,6 +43,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    align-self: center;
 }
 
 .menu ul {
@@ -88,53 +83,37 @@ header {
 
 .menu ul ul li {
     float: none;
-    border-bottom: solid 1px #ccc;
 }
 
 .menu ul ul li a {
-    background-color: rgb(88, 133, 255);
+    background-color: rgb(41, 72, 157);
     border-radius: 8px;
     list-style: none;
 }
 
+.banner-phrase {
+    margin-top: 220px;
+    align-self: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-/*CSS Banner*/
 main {
     height: 732px;
     background-image: url("/img/banner02.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px #000;
-
     display: flex;
     align-items: center;
     justify-content: initial;
 }
 
-h1,
-h2 {
+h1 {
     font-size: 4rem;
     color: #EBC42A;
     font-family: 'Teko', sans-serif;
-    text-shadow: 5px 2px 10px #2F2F2F;
+    text-shadow: 5px 2px 10px #2f2f2f;
     font-weight: 400;
 }
-
-.banner h1 {
-    width: 600px;
-    margin-left: 70px;
-}
-
 
 /*CSS sessao_nossa_equipe*/
 
@@ -159,14 +138,15 @@ h2 {
 }
 
 
-.bloco h2{
+.bloco h2 {
     margin-bottom: 10px;
     font-size: 4rem;
     color: #fff;
     text-shadow: none;
     font-family: 'Open Sans', sans-serif;
 }
-.bloco p{
+
+.bloco p {
     font-size: 1.8rem;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -181,7 +161,8 @@ h2 {
     background-color: #A6A6A8;
 }
 
-.equipe1 .foto1,.foto3{
+.equipe1 .foto1,
+.foto3 {
     height: 376px;
     width: 600px;
     box-shadow: 10px 20px 100px #000;
@@ -212,7 +193,9 @@ h2 {
     box-shadow: 10px 20px 100px #000;
     background-color: #A6A6A8;
 }
-.equipe2 .foto2,.foto4{
+
+.equipe2 .foto2,
+.foto4 {
     height: 376px;
     width: 600px;
     box-shadow: 10px 20px 100px #000;
@@ -268,7 +251,7 @@ h2 {
 
 
 @media (max-width: 1200px) {
-  
+
     .container {
         display: flex;
         justify-content: center;
@@ -294,43 +277,45 @@ h2 {
     }
 
 
-  
+
     .equipe1 .bloco {
         height: 600px;
         width: 500px;
-      
+
     }
-    
+
     .equipe2 .bloco {
         height: 600px;
         width: 500px;
         margin-top: -305px;
-       
-    }
-    
 
-    .equipe1 .foto1,.foto3{
+    }
+
+
+    .equipe1 .foto1,
+    .foto3 {
         height: 600px;
         width: 600px;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
 
-    .equipe2 .foto2,.foto4{
+    .equipe2 .foto2,
+    .foto4 {
         height: 300px;
         width: 600px;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
-  
-    
-    
+
+
+
 
 }
 
@@ -357,89 +342,94 @@ h2 {
         font-size: 2rem;
     }
 
-    
+
     .equipe1 {
         display: flex;
         flex-direction: column;
     }
+
     .equipe2 {
         display: flex;
         flex-direction: column-reverse;
     }
-  
+
     .equipe1 .bloco {
         height: 300px;
         width: 100vw;
-      
+
     }
-    
+
     .equipe2 .bloco {
         height: 300px;
         width: 100vw;
         margin-top: 0px;
-       
-    }
-    
 
-    .equipe1 .foto1,.foto3{
+    }
+
+
+    .equipe1 .foto1,
+    .foto3 {
         height: 400px;
         width: 100%;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
 
-    .equipe2 .foto2,.foto4{
+    .equipe2 .foto2,
+    .foto4 {
         height: 400px;
         width: 100%;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
-  
+
 
 
 }
 
 @media (max-width: 400px) {
-  
+
     .equipe1 .bloco {
         height: 200px;
         width: 100vw;
-      
+
     }
-    
+
     .equipe2 .bloco {
         height: 200px;
         width: 100vw;
         margin-top: 0px;
-       
-    }
-    
 
-    .equipe1 .foto1,.foto3{
+    }
+
+
+    .equipe1 .foto1,
+    .foto3 {
         height: 200px;
         width: 100%;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
 
-    .equipe2 .foto2,.foto4{
+    .equipe2 .foto2,
+    .foto4 {
         height: 200px;
         width: 100%;
         box-shadow: none;
         background-color: transparent;
-        background-size:contain ;
+        background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
-  
+
 
 }

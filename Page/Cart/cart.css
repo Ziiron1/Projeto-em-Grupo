@@ -15,31 +15,26 @@ body {
     width: 100%;
     margin-top: 110px;
 }
-
 header {
     display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
+    flex-direction: column;
+    height: 732px;
+    align-items: flex-start;
+    background-image: url("../img/banner01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.header-container {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
-    position: fixed;
-    left: 0;
-    width: 100%;
-    top: 0;
-    z-index: 0;
-}
-
-#menu {
-    position: fixed;
-    margin-left: 40px;
-    top: 0;
-    z-index: 1;
+.nav-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+}
+
+.banner-phrase {
+    align-self: center;
+    margin-top: 220px;
 }
 
 .menu {
@@ -49,6 +44,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    align-self: center;
 }
 
 .menu ul {
@@ -88,7 +84,6 @@ header {
 
 .menu ul ul li {
     float: none;
-    border-bottom: solid 1px #ccc;
 }
 
 .menu ul ul li a {
