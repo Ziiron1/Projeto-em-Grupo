@@ -150,16 +150,82 @@ hr {
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
+    margin-bottom: 70px;
 }
 
 .planos div {
-    height: 423px;
+    height: 500px;
     width: 100%;
-    border-radius: 10px;
-    background-color: #EBC42A;
+    
+    background-color: #D9D9D9;
     box-shadow: 30px 40px 20px rgba(22, 22, 22, 0.527);
+    
+}
+.planos img{
+    height: 20px;
+    width: 20px;
+}
+
+.planos h3{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 3.1rem;
+    background-color:#fffb00;
+}
+.planos h3:hover{
+    color: #f30924;
 
 }
+
+.planos h4 {
+    text-align:center;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.planos small {
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #686868;
+}
+.planos button{
+    height: 100px;
+    width: 100%;
+    color: #D9D9D9;
+    background-color:#90323D;
+    border: none;
+    font-family: 'teko', sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+    display: block;
+}
+.planos button:hover{
+    background-color: #f30924;
+    color: #d0ff00;
+    transition: 05ms;
+}
+.planos ul{
+   list-style: none;
+}
+
+.plano_day li,
+.plano_life li,
+.plano_extreme li{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /*Css sessao_imagem_academia*/
 
@@ -196,6 +262,7 @@ hr {
 
 /*CSS sessao_descica_quem_somos*/
 .descricao_quem_somos {
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -223,12 +290,13 @@ hr {
 }
 
 .descricao_texto button {
-    height: 65px;
+    height: 85px;
     width: 317px;
     border-radius: 10px;
     background-color: #90323D;
-
+    border: none;
     align-self: center;
+    box-shadow: 0px 10px 10px rgba(22, 22, 22, 0.425);
 }
 
 .descricao_texto a {
@@ -242,11 +310,105 @@ hr {
     height: 408px;
     width: 640px;
     background-color: #EBC42A;
+    box-shadow: 0px 40px 20px rgba(22, 22, 22, 0.425);
 }
 
 footer {
     padding: 30px;
 }
+
+
+.social {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social h3{
+    font-family: 'Teko', sans-serif;
+    color: #EBC42A;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.social p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.social a{
+    display: inline-flex;
+    background-color: #2B2B2B;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+    margin: 0px 15px 15px;
+}
+
+.social a:hover{
+    background-color: #EBC42A;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+/* Footer  */
+
+footer{
+    background-color: #2B2B2B;
+    width: 100%; height: 300px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.info div{
+    width: 50%; height: 150px;
+}
+
+.info h4{
+    font-family: 'Teko', sans-serif;
+    color: #EBC42A;
+    font-size: 35px;
+}
+
+.info a, .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.info a:hover{
+    color: #EBC42A;
+    transition: 0.5s;
+} 
+
+.info p:hover{
+    color: #EBC42A;
+    transition: 0.5s;
+}
+
+.info ul{
+    list-style: none;
+}
+
+
+
+
 
 
 @media(min-width: 1431px) {
@@ -263,6 +425,7 @@ footer {
     .planos div {
         height: 623px;
         width: 417px;
+       
 
     }
 
@@ -281,9 +444,6 @@ footer {
         justify-content: center;
     }
 
-    nav {
-        display: none;
-    }
 
     .banner h1 {
         width: 600px;
@@ -292,7 +452,7 @@ footer {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .planos {
@@ -303,8 +463,8 @@ footer {
     }
 
     .planos div {
-        height: 423px;
-        width: 317px;
+        width: 400px;
+        margin-bottom: 120px;
     }
 
 
@@ -372,13 +532,7 @@ footer {
 
 
 @media (max-width: 691px) {
-    header {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }
+  
 
     .banner h1 {
         width: auto;
@@ -388,8 +542,8 @@ footer {
     }
 
     .planos div {
-        height: 323px;
-        width: 227px;
+        
+        width: 307px;
     }
 
     /*CSS sessao_foto_academia */
@@ -403,5 +557,14 @@ footer {
         height: auto;
         width: 364px;
         align-self: center;
+    }
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        height: 760px;
+        padding: 10px;
     }
 }
