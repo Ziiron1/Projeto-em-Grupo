@@ -412,6 +412,23 @@ footer {
     list-style: none;
 }
 
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #2B2B2B;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #EBC42A;
+    border-radius: 20px;
+    border: 3px solid #EBC42A;
+  }
+
+
 /* Responsividade Footer  */
 
 @media (max-width: 800px) {

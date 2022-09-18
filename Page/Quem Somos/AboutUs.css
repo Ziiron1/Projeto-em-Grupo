@@ -313,10 +313,10 @@ footer{
     list-style: none;
 }
 
-/* Scrollbar Teste  */
+/* Scrollbar */
 
 body::-webkit-scrollbar {
-    width: 20px;
+    width: 17px;
   }
   
   body::-webkit-scrollbar-track {
