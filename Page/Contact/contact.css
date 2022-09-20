@@ -216,6 +216,10 @@ fieldset.grupo .campo {
     background: #e0e0f8;
 }
 
+#experiencia{
+    width: 26em;
+}
+
 .button {
     font-size: 1.2em;
     background: #59429d;
@@ -368,12 +372,67 @@ body::-webkit-scrollbar-thumb {
 
 /* Responsividade do footer  */
 
-@media (max-width: 800px) {
+@media (max-width: 1049px) {
+
+    .form1 {
+        width: 40%;
+        padding-bottom: 60px;
+        padding-left: 5px;
+        padding-top: 50px;
+        margin-left: 30%;
+        
+        margin-right: 30%;
+        display: block;
+    }
+    .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+       width: 90%;
+    }
+   
+    #experiencia{
+        width: 90%;
+    }
+    .iframe {
+        flex-direction: column;
+        
+        
+    }
+
+
+
     .info {
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
+    .info h4 {
+
+        font-size: 1.4rem;
+    }
+
     footer {
         height: 750px;
     }
+
+}
+
+
+
+@media (max-width: 500px) {
+    h1, h2 {
+        font-size: 2.3rem;
+    }
+   
+   
+    .form1 {
+        width: 245px;
+        margin-left: 0%;
+        margin-right: 30%;
+     
+    }
+
+    .iframe {
+      width: 100%;
+    }
+    
+    
 }
