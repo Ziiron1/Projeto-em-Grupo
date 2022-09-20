@@ -127,7 +127,7 @@ main {
 /* FORM */
 
 h1, h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #EBC42A;
     font-family: 'Teko', sans-serif;
     text-shadow: 5px 2px 10px #2F2F2F;
@@ -135,11 +135,15 @@ h1, h2 {
 }
 
 .form1 {
+    height: 500px;
     padding-bottom: 70px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     direction: initial;
+    background-color: #EBC42A;
+    border-radius: 10px;
+    margin: 0 30%;
 }
 
 .Titulos {
@@ -181,8 +185,7 @@ input, select, textarea, button {
 }
 
 .campo {
-    margin-bottom: 1em;
-    display: flex;
+    margin-bottom: 1px;
     align-items: center;
     justify-content: center;
     gap: 3px;
@@ -231,7 +234,7 @@ fieldset.grupo .campo {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-left: 280px;
+    margin-left: 0;
 }
 
 .button:hover {
@@ -244,6 +247,13 @@ fieldset.grupo .campo {
 #check {
     display: flex;
     flex-direction: row;
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
 
 /* Redes Sociais */
@@ -335,6 +345,10 @@ footer {
 
 .info ul {
     list-style: none;
+}
+
+.info2 {
+    color: #fff;
 }
 
 /* Scrollbar */
