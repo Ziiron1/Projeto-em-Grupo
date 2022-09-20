@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="nav-container">
-            <img src="/img/logo_header_teste.png" alt="Logo Viking">
+            <img id="menu" src="/img/logo_header_teste03.png" alt="Logo Viking" style>
             <nav class="menu">
                 <ul id="menu">
                     <li>
@@ -97,23 +97,15 @@
                 </ul>
             </nav>
         </div>
-
+        <!-- <button class="button_menu">
+        </button> -->
         <div class="banner-phrase">
             <!--logo-->
-            <h1 class="Tittle">
-                Where does it come from? Comaking it over 2000 years ol
+            <h1>
+                Onde meu corpo cansa, minha mente descansa.
             </h1>
         </div>
     </header>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, vitae esse porro corrupti, fugit culpa,
-        fugiat magnam
-        nam est aut cupiditate reiciendis ullam facilis nostrum. Magni quaerat non quo voluptatem.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, vitae esse porro corrupti, fugit culpa,
-        fugiat magnam
-        nam est aut cupiditate reiciendis ullam facilis nostrum. Magni quaerat non quo voluptatem.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, vitae esse porro corrupti, fugit culpa,
-        fugiat magnam
-        nam est aut cupiditate reiciendis ullam facilis nostrum. Magni quaerat non quo voluptatem.</p>
     <main>
         <div class="Titulos">
             <h1 id="titulo">Formulário</h1>
@@ -125,18 +117,24 @@
             <form>
                 <fieldset class="grupo">
                     <div class="campo">
-                        <label for="nome"><strong>Nome</strong></label>
+                        <label for="nome">
+                            <strong>Nome</strong>
+                        </label>
                         <input type="text" name="nome" id="nome" required>
                     </div>
 
                     <div class="campo">
-                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <label for="sobrenome">
+                            <strong>Sobrenome</strong>
+                        </label>
                         <input type="text" name="sobrenome" id="sobrenome" required>
                     </div>
 
                 </fieldset>
                 <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
+                    <label for="email">
+                        <strong>Email</strong>
+                    </label>
                     <input type="email" name="email" id="email" required>
                 </div>
 
@@ -154,7 +152,9 @@
                 </div>
 
                 <div class="campo">
-                    <label for="senioridade"><strong>Senioridade</strong></label>
+                    <label for="senioridade">
+                        <strong>Senioridade</strong>
+                    </label>
                     <select id="senioridade">
                         <option selected disabled value=""></option>
                         <option>Junior</option>
@@ -164,7 +164,9 @@
                 </div>
                 <fieldset class="grupo">
                     <div id="check" class="campo">
-                        <label><strong>Selecione as tecnologias que utiliza:</strong></label>
+                        <label>
+                            <strong>Selecione as tecnologias que utiliza:</strong>
+                        </label>
 
                         <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                         <label for="tecnologia1">HTML</label>
@@ -198,7 +200,9 @@
 
                 <div class="campo">
                     <br>
-                    <label><strong>Conte um pouco da sua experiencia com nosso site</strong></label>
+                    <label>
+                        <strong>Conte um pouco da sua experiencia com nosso site</strong>
+                    </label>
                     <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
                 </div>
 
@@ -216,10 +220,19 @@
         <h3>VIKING</h3>
         <p>Siga-nos nas redes sociais:</p>
         <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5521979431359&text=Entre%20em%20contato" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:vikingacademia@contato.com" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5521979431359&text=Entre%20em%20contato" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:vikingacademia@contato.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+                </i>
+            </a>
         </div>
 
     </section>
@@ -232,9 +245,15 @@
                 <h4>Institucional</h4>
 
                 <ul>
-                    <li><a href="../Quem Somos/AboutUs.html">Sobre Nós</a></li>
-                    <li><a href="../Nossa Equipe/team.html">Nossa Equipe</a></li>
-                    <li><a href="/index.html">Nossos Planos</a></li>
+                    <li>
+                        <a href="../Quem Somos/AboutUs.html">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="../Nossa Equipe/team.html">Nossa Equipe</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Nossos Planos</a>
+                    </li>
                 </ul>
             </div>
 
@@ -242,11 +261,21 @@
                 <h4>Planos</h4>
 
                 <ul>
-                    <li><a href="">Plano Mensal</a></li>
-                    <li><a href="">Plano Trimestral</a></li>
-                    <li><a href="">Plano Semestral</a></li>
-                    <li><a href="">Plano Anual</a></li>
-                    <li><a href="">Plano Kids</a></li>
+                    <li>
+                        <a href="">Plano Mensal</a>
+                    </li>
+                    <li>
+                        <a href="">Plano Trimestral</a>
+                    </li>
+                    <li>
+                        <a href="">Plano Semestral</a>
+                    </li>
+                    <li>
+                        <a href="">Plano Anual</a>
+                    </li>
+                    <li>
+                        <a href="">Plano Kids</a>
+                    </li>
                 </ul>
             </div>
 
@@ -254,11 +283,21 @@
                 <h4>Modalidades</h4>
 
                 <ul>
-                    <li><a href="">Musculação</a></li>
-                    <li><a href="">Ginástica Localizada</a></li>
-                    <li><a href="">Zumba</a></li>
-                    <li><a href="">Artes Marciais</a></li>
-                    <li><a href="">Treinamento Funcional </a></li>
+                    <li>
+                        <a href="">Musculação</a>
+                    </li>
+                    <li>
+                        <a href="">Ginástica Localizada</a>
+                    </li>
+                    <li>
+                        <a href="">Zumba</a>
+                    </li>
+                    <li>
+                        <a href="">Artes Marciais</a>
+                    </li>
+                    <li>
+                        <a href="">Treinamento Funcional </a>
+                    </li>
                 </ul>
             </div>
 
@@ -268,7 +307,9 @@
                 <br>
                 <p>Cel (21) 91234-5678</p>
                 <p>Tel (21) 33131415</p>
-                <a href="mailto:vikingacademia@contato.com"><p>Email vikingacademia@contato.com</p> </a>
+                <a href="mailto:vikingacademia@contato.com">
+                    <p>Email vikingacademia@contato.com</p>
+                </a>
             </div>
 
         </section>
