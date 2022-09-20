@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -324,9 +325,9 @@ footer {
     padding: 30px;
 }
 
+/* Redes Sociais */
 
 .social {
-    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -338,15 +339,14 @@ footer {
     font-family: 'Teko', sans-serif;
     color: #EBC42A;
     font-size: 60px;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 100px;
 }
 
 .social p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-}
-.social-icons a{
-    text-decoration: none;
+    color: white;
 }
 .social a {
     display: inline-flex;
@@ -362,7 +362,6 @@ footer {
     margin: 0px 15px 15px;
     text-decoration: none;
 }
-
 
 .social a:hover {
     background-color: #EBC42A;
@@ -387,7 +386,6 @@ footer {
     justify-content: space-around;
     padding: 50px;
 }
-
 
 .info div {
     width: 50%;
@@ -422,10 +420,36 @@ footer {
     list-style: none;
 }
 
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #2B2B2B;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #EBC42A;
+    border-radius: 20px;
+    border: 3px solid #EBC42A;
+  }
 
 
+/* Responsividade Footer  */
 
+@media (max-width: 800px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    footer {
+        height: 750px;
+    }
+}
+/* Responsividade Página inicial  */
 
 @media(min-width: 1431px) {
     .banner h1 {
