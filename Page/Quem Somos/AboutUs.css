@@ -123,13 +123,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 170px 150px;
+    margin: 170px 200px;
     gap: 70px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .cont-2 img {
-    width: 100%;
+    width: 250px;
 }
 
 
@@ -320,11 +320,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #2B2B2B;
+    background: #2B2B2B; 
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #EBC42A;
+    background-color: #EBC42A; 
     border-radius: 20px;
     border: 3px solid #EBC42A;
   }
@@ -342,17 +342,20 @@ body::-webkit-scrollbar {
     .cont-2{
         flex-direction: column;
         text-align: center;
-        margin: 1px 90px 60px;  
+        margin: 1px 40px 60px; 
+        gap: 0px; 
+        font-size: 18px;
     }
 
     .cont-2 img {
         width: 50%;
-        margin: 90px 0px 0px;
+        margin-top: 10%;
     }
 
     .cont-3 {
         flex-direction: column;
         align-items: center;
+        gap: 0px;
     }
 
     .cont-3-missao, .cont-3-valores {
@@ -368,17 +371,36 @@ body::-webkit-scrollbar {
     }
 
     footer{
-        height: 750px;
+        height: 880px;
+    }
+
+    .modalidades {
+        margin-top: 40px;
+    }
+
+    .contato{
+        margin-top: 100px;
+    }
+
+    .cont-2 img {
+        width: 50%;
     }
 }
 
-@media (max-width: 783px){
+@media (max-width: 778px) {
     .cont-2 img {
-        margin: 250px 0px 1px;
+        margin-top: 30%;
     }
 }
-@media (max-width: 783px){
+
+@media (max-width: 565px) {
     .cont-2 img {
-        margin: 400px 0px 1px;
+        margin-top: 70%;
+    }
+}
+
+@media (max-width: 488px) {
+    .cont-2 img {
+        margin-top: 150%;
     }
 }
