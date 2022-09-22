@@ -135,7 +135,7 @@ h1, h2 {
 }
 
 .form1 {
-    height: 500px;
+    height: 550px;
     padding-bottom: 70px;
     display: flex;
     justify-content: center;
@@ -220,6 +220,15 @@ fieldset.grupo .campo {
     width: 26em;
 }
 
+.btt-form {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
 .button {
     font-size: 1.2em;
     background: #59429d;
@@ -229,11 +238,11 @@ fieldset.grupo .campo {
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -247,6 +256,13 @@ fieldset.grupo .campo {
     cursor: pointer;
 }
 
+.button {
+ border-radius: 5px;
+ color: #fff;
+ margin-top: 50px;
+}
+
+
 #check {
     display: flex;
     flex-direction: row;
@@ -254,7 +270,7 @@ fieldset.grupo .campo {
 
 .iframe {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 20px;
 }

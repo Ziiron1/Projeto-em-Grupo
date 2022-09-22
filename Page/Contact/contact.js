@@ -1,3 +1,5 @@
-function myFunction(x) {
-  x.classList.toggle("change");
+
+function onclick() {
+  document.write("Seu formulário foi enviado!!!")
+
 }
