@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/index.html" target="_blank">Home</a>
+                        <a href="./index.html" target="_blank">Home</a>
                     </li>
                 </ul>
             </nav>
@@ -114,7 +114,7 @@
             <br>
         </div>
         <div class="form1">
-            <form>
+            <form onsubmit="return valida()">
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="nome">
@@ -160,7 +160,7 @@
                     <textarea rows="6" id="experiencia" name="experiencia" placeholder="Conte-nos sua experiencia com o site"></textarea>
                 </div>
                 <div class="btt-form">
-                    <button class="button" onclick=onclick() id="botao" type="submit" name="Enviar">Enviar</button>
+                    <button class="button" onsubmit="return valida()">Enviar</button>
                 </div>
             </form>
         </div>
