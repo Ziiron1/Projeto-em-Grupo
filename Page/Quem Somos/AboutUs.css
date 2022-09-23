@@ -25,6 +25,7 @@ header {
     background-image: url(./img/background-section-1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 4px 10px;
 }
 
 .nav-container {
