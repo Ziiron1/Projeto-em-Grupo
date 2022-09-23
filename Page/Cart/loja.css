@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Teko:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+
+
+body {
+    background: rgb(87, 88, 88);
+    background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
+    overflow-x: hidden;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    font-family: 'Arial';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu a {
+    padding: 8px 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Archivo Narrow';
+    font-size: 1.1rem;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #a1a1a1;
+    color: rgb(255, 252, 88);
+}
+
+.menu ul ul li {
+    float: none;
+}
+
+.menu ul ul li a {
+    background-color: rgb(41, 72, 157);
+    border-radius: 10px;
+    list-style: none;
+}
+
+.button_menu {
+    height: 45px;
+    width: 45px;
+    margin-right: 25px;
+    background-color: #2F2F2F;
+}
+
+.button_menu:hover {
+    background-color: #686868;
+    transition: 0.3s;
+}
+
+
+/* some com os modelos que serão usados */
+.modelo{
+ display: none;
+}
+/* adiciona grid aos itens */
+.loja-item{
+    display: grid;
+    gap: 10px;
+    box-shadow:  1px 1px 5px  rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    width: 18rem;
+}
+
+.btn-voltar{
+    display: none;
+}
+
+.loja-item-imagem{
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+.loja-item :nth-child(2){
+    grid-row: 4;
+}
+
+.itens-amostra{
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease-in-out 0.2s;
+
+}
+
+
+
+.loja-item{
+    background-color: rgb(116, 114, 114);
+    margin: 5px;
+
+}
+
+.loja-item-nome{
+    font-size:1.5em;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+
+.loja-item-valor{
+    font-size: 1.3rem;
+    color: #EBC42A;
+    font-family: 'Teko', sans-serif;
+}
+
+.loja-item a {
+    font-style: none;
+    text-decoration: none;
+}
+
+.loja-item a .loja-item-comprar{
+    border: solid 3px #EBC42A;
+    padding: 0.5rem 1.4rem;
+    background-color: #EBC42A;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    width: 6rem;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.4s;
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+}
+
+.loja-item a .loja-item-comprar:hover{
+    border: solid 3px #EBC42A;
+    background-color: rgb(255, 255, 255);
+    color: #EBC42A;
+    cursor: pointer;
+}
+
+
+
+.add-item-alpha{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+}
+
+.add-item-window{
+    width:900px;
+    background-color: rgb(116, 114, 114);
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.item-desc-itens{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item-desc-itens h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.qt-itens{
+    color:#EBC42A;
+}
+.item-desc-all{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.loja-valor-cancelar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem 0;
+}
+
+.itens-cor{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+.itens-cor li{
+    border: solid 3px #EBC42A;
+    background: #EBC42A;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.color-click{
+    border: solid 3px #EBC42A !important;
+    background: white !important;
+    color: #EBC42A !important;
+}
+
+.valor-add{
+    display: flex;
+    gap: 0 3rem;
+}
+.add{
+    display: flex;
+    gap: 0.8rem;
+    text-align: center;
+    align-items: center;
+}
+
+.add button{
+    color: white;
+    background-color: #EBC42A;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid #EBC42A;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    transition: ease-in-out 0.2s;
+}
+
+.add button:hover{
+    color: #EBC42A;
+    background-color: white;
+    border: 3px solid #EBC42A;
+    cursor: pointer;
+}
+
+.loja-desc-valor{
+    color: #EBC42A;
+    font-size: 2rem;
+}
+
+.loja-desc-cancelar{
+    color: #EBC42A;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: solid 3px #EBC42A;
+    padding: 0.5rem 1.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.loja-desc-comprar{
+    color: white;
+    text-decoration: none;
+    background-color: #EBC42A;
+    padding: 0.5rem 1.4rem;
+    border: solid 3px #EBC42A;
+    border-radius: 1rem;
+    transition: ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    gap: 0 3rem;
+}
+.loja-desc-comprar :hover  {
+    color: #EBC42A;
+    text-decoration: none;
+    background-color:white;
+    padding: 0.5rem 1.4rem;
+    border: solid 3px #EBC42A;
+    border-radius: 1rem;
+}
+.qt-itens{
+    font-size: 1.5rem;
+    color:#EBC42A(236, 106, 58);
+}
+.item-desc-descricao{
+    color: white;
+    font-size: 1rem;
+}
+
+.none{
+    display: none;
+}
+
+aside{
+    width: 25rem;
+    height: 100vh;
+    background-color:rgb(87, 88, 88);
+    position: fixed;
+    top: 0;
+    right:-30rem;
+    gap:1rem;
+    text-align: center;
+    transition: ease-in-out 0.5s;
+    overflow-x:hidden;
+}
+
+aside.show{
+    right:0rem; 
+}
+
+.carrinhoDeCompras{
+    overflow-y:auto;
+    background: rgb(87, 88, 88);
+    
+}
+
+.item-carrinho{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(141, 141, 139);
+    padding: 1rem 0;
+}
+.item-carrinho h3{
+    color: white;
+}
+
+
+.carrinho-img{
+    width: 50%;
+    max-width: 50%;
+}
+
+.item-desc{
+    display: flex;
+    gap: 1rem;
+}
+
+.item-cor-preço{
+    gap: 1rem;
+    color: #EBC42A;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 2rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.item-btn-qt{
+    display: flex;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.item-btn-qt button{
+    color: white;
+    background-color: #EBC42A;
+    border: solid 3px #EBC42A;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    
+    
+}
+.item-btn-qt h5{
+    color: #EBC42A;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    
+}
+.carrinho-btns{
+    margin-bottom: 15rem;
+    
+}
+.carrinho-btns .carrinho-valores{
+    color: rgb(202, 202, 202);
+    
+}
+
+.carrinho-btns .btns{
+    margin-top: 1rem;
+    display: inline-block;
+    color: white;
+    background-color: #EBC42A;
+    padding: 0.8rem 1.8rem;
+    border-radius: 1rem;
+    
+}
+
+
+@media (max-width: 700px){
+    .add-item-window{
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .btn-voltar{
+        display: flex;
+        margin: auto;
+        margin-top: 1rem;
+        color: white;
+        background-color: #EBC42A;
+        padding: 0.8rem 1.8rem;
+        border-radius: 1rem;
+        border: solid transparent;
+        
+    }
+
+    aside{
+        width: 100vw;
+        height:100rem;
+        position: fixed;
+        top: 0;
+        right:-40rem;
+        gap:1rem;
+        text-align: center;
+        transition: ease-in-out 0.5s;
+        overflow-x:hidden;
+    }
+    
+    aside.show{
+        right:0rem; 
+    }
+}
