@@ -212,23 +212,23 @@ h1 {
 
 /*CCS foto colocadas no background*/
 .foto1 {
-    background-image: url("./img/foto_equipe01.png");
+    background-image: url("/Page/Nossa Equipe/img/foto_equipe01.png");
     background-size: cover;
 }
 
 .foto2 {
-    background-image: url("./img/foto_equipe02.png");
+    background-image: url("/Page/Nossa Equipe/img/foto_equipe02.png");
     background-size: cover;
 }
 
 .foto3 {
-    background-image: url("./img/foto_equipe03.png");
+    background-image: url("/Page/Nossa Equipe/img/foto_equipe03.png");
     background-size: cover;
 
 }
 
 .foto4 {
-    background-image: url("./img/foto_equipe04.png");
+    background-image: url("/Page/Nossa Equipe/img/foto_equipe04.png");
     background-size: cover;
 }
 
