@@ -212,7 +212,7 @@ h1 {
 
 /*CCS foto colocadas no background*/
 .foto1 {
-    background-image: url("/Page/Nossa Equipe/img/foto_equipe01.png");
+    background-image: url("./Nossa Equipe/img/foto_equipe01.png");
     background-size: cover;
 }
 
