@@ -293,7 +293,7 @@ footer{
 }
 
 .info div{
-    width: 50%; height: 150px;
+    width: 50%; 
 }
 
 .info h4{
@@ -413,7 +413,7 @@ body::-webkit-scrollbar {
     }
     
     .bloco p{
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           padding: 0px;
         margin-top: 0px;
     }
@@ -548,6 +548,12 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 400px) {
+ 
+    .menu ul {
+        position: absolute;
+        top: 70px;
+        width: 113px;
+    }
 
     .equipe1 .bloco,
     .equipe2 .bloco  {

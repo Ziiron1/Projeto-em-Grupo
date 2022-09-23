@@ -337,7 +337,6 @@ footer {
 
 .info div {
     width: 50%;
-    height: 150px;
 }
 
 .info h4 {
@@ -420,10 +419,6 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         padding: 0px;
     }
-    .info h4 {
-
-        font-size: 1.4rem;
-    }
 
     footer {
         height: 750px;
@@ -432,8 +427,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
 @media (max-width: 500px) {
+    
+    .menu ul {
+        list-style: none;
+        position: absolute;
+        top: 70px;
+        width: 113px;
+    }
+    
+    .info2 {
+        align-self: normal;
+    }
+    
+    
     h1, h2 {
         font-size: 2.3rem;
     }
@@ -447,7 +454,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .iframe {
-      width: 100%;
+      width: 55%;
     }
     
     
