@@ -8,12 +8,22 @@
 
 
 
-
 body {
     background: rgb(87, 88, 88);
     background: linear-gradient(322deg, rgba(88, 88, 88, 1) 10%, rgba(33, 33, 33, 1) 90%);
     overflow-x: hidden;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 732px;
+    align-items: flex-start;
+    background-image: url("/img/banner04.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -89,6 +99,19 @@ body {
     transition: 0.3s;
 }
 
+.banner-phrase {
+    align-self: center;
+    margin-top: 220px;
+}
+
+.banner-phrase h1{
+    font-size: 5rem;
+    color: #EBC42A;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 5px 5px 8px #2F2F2F;
+    font-weight: 400;
+}
+
 
 /* some com os modelos que serão usados */
 .modelo{
@@ -121,6 +144,7 @@ body {
 .itens-amostra{
     max-width: 100vw;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     transition: ease-in-out 0.2s;
 
@@ -436,7 +460,127 @@ aside.show{
 }
 
 
+footer {
+    padding: 30px;
+}
+
+/* Redes Sociais */
+
+.social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social h3 {
+    font-family: 'Teko', sans-serif;
+    color: #EBC42A;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 100px;
+}
+
+.social p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.social a {
+    display: inline-flex;
+    background-color: #2B2B2B;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+    margin: 0px 15px 15px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    background-color: #EBC42A;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+}
+
+/* Footer  */
+
+footer {
+    background-color: #2B2B2B;
+    width: 100%;
+    height: 300px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.info div {
+    width: 50%;
+}
+
+.info h4 {
+    font-family: 'Teko', sans-serif;
+    color: #EBC42A;
+    font-size: 35px;
+}
+
+.info a,
+.info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #EBC42A;
+    transition: 0.5s;
+}
+
+.info p:hover {
+    color: #EBC42A;
+    transition: 0.5s;
+}
+
+.info ul {
+    list-style: none;
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2B2B2B;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #EBC42A;
+    border-radius: 20px;
+    border: 3px solid #EBC42A;
+}
+
+
+
+
+
 @media (max-width: 700px){
+
     .add-item-window{
         display: flex;
         flex-direction: column;
@@ -471,4 +615,32 @@ aside.show{
     aside.show{
         right:0rem; 
     }
+
+    .info {
+        height: 750px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    footer {
+        height: 760px;
+        padding: 10px;
+    }
+
 }
+
+@media (max-width: 691px) {
+
+    .menu ul {
+        list-style: none;
+        position: absolute;
+        top: 70px;
+        width: 113px;
+    }
+    .banner-phrase h1{
+        font-size: 3rem;
+     
+    }
+}
+

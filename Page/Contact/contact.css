@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     height: 500px;
     align-items: flex-start;
-    background-image: url("../img/banner01.png");
+    background-image: url("/img/Banner02.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
