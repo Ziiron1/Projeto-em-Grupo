@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     height: 732px;
     align-items: flex-start;
-    background-image: url(/img/banner03.png);
+    background-image: url("../img/banner03.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 10px;
@@ -212,23 +212,23 @@ h1 {
 
 /*CCS foto colocadas no background*/
 .foto1 {
-    background-image: url("./Nossa Equipe/img/foto_equipe01.png");
+    background-image: url("../img/team-foto-equipe01.png");
     background-size: cover;
 }
 
 .foto2 {
-    background-image: url("/Page/Nossa Equipe/img/foto_equipe02.png");
+    background-image: url("../img/team-foto-equipe02.png");
     background-size: cover;
 }
 
 .foto3 {
-    background-image: url("/Page/Nossa Equipe/img/foto_equipe03.png");
+    background-image: url("../img/team-foto-equipe03.png");
     background-size: cover;
 
 }
 
 .foto4 {
-    background-image: url("/Page/Nossa Equipe/img/foto_equipe04.png");
+    background-image: url("../img/team-foto-equipe04.png");
     background-size: cover;
 }
 

@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     height: 732px;
-    background-image: url("/Page/Quem Somos/img/background-section-1.png");
+    background-image: url("../img/AboutUs-background-section-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 10px;
