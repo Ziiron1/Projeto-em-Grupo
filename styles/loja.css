@@ -19,7 +19,7 @@ header {
     flex-direction: column;
     height: 732px;
     align-items: flex-start;
-    background-image: url("/img/banner04.png");
+    background-image: url("../img/Banner04.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
